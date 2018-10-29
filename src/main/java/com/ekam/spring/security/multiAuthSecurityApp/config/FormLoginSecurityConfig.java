@@ -22,7 +22,7 @@ public class FormLoginSecurityConfig extends WebSecurityConfigurerAdapter {
 	protected void configure(HttpSecurity http) throws Exception {
 		http.authorizeRequests().antMatchers("/webjars/**", "/images/**", "/security/**", "/error").permitAll().and()
 				.formLogin().loginPage("/internal/login").permitAll().defaultSuccessUrl("/landing", true).and().logout()
-				.logoutUrl("/internal/logout").and().csrf().disable().authorizeRequests().anyRequest().authenticated();
+				.logoutUrl("/internal/logout").logoutSuccessUrl("/internal/login?logout").permitAll().and().csrf().disable().authorizeRequests().anyRequest().authenticated();
 
 	}
 
