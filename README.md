@@ -1,8 +1,5 @@
-# Name of the project
-> Spring Security Multi-Authentication Showcase
-
-Spring Boot based sample application to show case java configurations for multiple authentication flow - Siteminder SSO and Form based Login.
-
+# Spring Security Multi-Authentication Showcase
+> Spring Boot based sample application to show case java configurations for multiple authentication flow - Siteminder SSO and Form based Login.
 
 ## Getting started/Running the application
 
