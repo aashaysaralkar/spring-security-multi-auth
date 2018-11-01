@@ -69,8 +69,8 @@ public class WebMvcConfig implements WebMvcConfigurer {
 		registry.addViewController("/internal/login").setViewName("login");
 		registry.addViewController("/").setViewName("landing");
 		registry.addViewController("/landing").setViewName("landing");
-		registry.addViewController("/error").setViewName("error");
-		registry.addViewController("/access-denied").setViewName("access-denied");
+		registry.addViewController("/error").setViewName("404");
+		registry.addViewController("/access-denied").setViewName("403");
         registry.setOrder(Ordered.HIGHEST_PRECEDENCE);
 		
 	}

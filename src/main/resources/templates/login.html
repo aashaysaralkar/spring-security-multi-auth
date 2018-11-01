@@ -71,6 +71,11 @@
                     You have been logged out.
                 </div>
             </div>
+            <div th:if="${param.sso}">
+                <div class="alert alert-warning">
+                    Anonymous access to SSO protected resource is denied.Please login to proceed
+                </div>
+            </div>
 			<div class="text-center">
 				<img src="/images/avatar.gif" class="img-circle avatar" alt="Avatar"/>
 			</div>
