@@ -37,7 +37,7 @@ public class SsoSecurityConfig extends WebSecurityConfigurerAdapter {
 	protected void configure(HttpSecurity http) throws Exception {
 		http.csrf().disable().addFilterAfter(siteMinderFilter(), RequestHeaderAuthenticationFilter.class)
 				.authenticationProvider(preAuthProvider()).authorizeRequests()
-				.antMatchers("/webjars/**", "/images/**", "/security/**", "/error","/internal/login").permitAll().and()
+				.antMatchers("/webjars/**", "/images/**", "/security/**", "/error","/internal/**").permitAll().and()
 				.authorizeRequests().anyRequest().authenticated().and().exceptionHandling()
 				.authenticationEntryPoint(new LoginUrlAuthenticationEntryPoint("/internal/login?sso"));
 
