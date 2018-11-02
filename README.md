@@ -24,7 +24,13 @@ If you enter invalid credentials, error message is shown on the login page
 >![Logout Screen](images/logout-screen.png)
 
 ## Testing Siteminder SSO login
-Typical SiteMinder architecture will have a web server with a SiteMinder agent and an Application server. If user requests for SSO protected resource, post authentication and authorization checks, request will be forwarded to the application with user token in SM_USER header 
+Typical SiteMinder architecture will have a web server with a SiteMinder agent and an Application server. If user requests for SSO protected resource, post authentication and authorization checks, request will be forwarded to the application with user token in SM_USER header
+
+
+## Credits
+I would like to thank folks at 
+1. https://startbootstrap.com  for providing free Bootstrap Admin templates. This demo uses https://startbootstrap.com/template-categories/admin-dashboard/
+2. https://www.tutorialrepublic.com for posting easy to use code snippets for a Bootstrap login form. This demo uses https://www.tutorialrepublic.com/codelab.php?topic=bootstrap&file=login-form-like-google
 
 ## Licensing
 The code in this project is licensed under MIT license.
