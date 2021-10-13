@@ -12,7 +12,7 @@ public class UserService implements UserDetailsService {
 	@Override
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 		if("user".equalsIgnoreCase(username)){
-			return User.withUsername(username).password("password").authorities("ROLE_USER").build();
+			return User.withUsername(username).password("{noop}password").authorities("ROLE_USER").build();
 		}
 		return null;
 	}
